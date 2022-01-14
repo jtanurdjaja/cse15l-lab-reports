@@ -23,16 +23,16 @@ For computers with a Windows operating system, we must first install OpenSSH. Op
 For Windows Server 2019 and Windows 10 devices take the following steps to install OpenSSH:
 
 1. Open **Settings**
-![Image](OpenSSH1.png)
+![Image](OpenSSH1.PNG)
 2. Select **Apps > Apps & Features**, then select **Optional Features**
-![Image](OpenSSH2.png)
+![Image](OpenSSH2.PNG)
 3. Search for **OpenSSH Client** and click **Install** *OR* search for **OpenSSH Server** and click **Install**
-![Image](OpenSSH3.png)
+![Image](OpenSSH3.PNG)
 
 After installing, the first step to remotely connect in a CSE course is to retrieve your course-specific account, which can be found at this link: [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php).
 
 The account should look similar to this, with the censored parts containing different letters:
-![Image](account.png)
+![Image](account.PNG)
 
 Then, on VSCode, open a new terminal. To open a new terminal, go to the bar at the top of VSCode and click on the tab terminal. A dropdown will appear, from which you should select new terminal. After opening a new terminal, enter in the following command:
 
@@ -41,7 +41,7 @@ Then, on VSCode, open a new terminal. To open a new terminal, go to the bar at t
 *The element after the five is the letter 'l' and not the number one.*
 
 If you are connecting for the first time, the message you will receive after entering the command above is a confirmation of whether or not you want to continue connecting. In which case, you should enter 'yes'. Then after putting your password for your course-specific account, you should see the following:
-![Image](confirmation.png)
+![Image](confirmation.PNG)
 
 The image above indicates that your computer, the **client**, is connected to the remote computer on campus, the **server**.
 
@@ -55,7 +55,7 @@ These are a few commands and their descriptions:
 * ls : (**l**i**s**t) provides a list of all the files in that directory.
     * ls -a : (list **a**ll) returns all the files  including the hidden files in the working directory.
 
-![Image](command.png)
+![Image](command.PNG)
 * pwd : (**P**rint **W**orking **D**irectory) returns the path of the working directory including the root of that directory.
 * cat : (con**cat**enate) returns the content of the file named after the command.
 * exit / Ctrl-D : logs you out of the remote server.
@@ -71,11 +71,11 @@ Then type in the following command line:
 
 In my case, I created a file named *WhereAmI.java*. When I typed in the command, I was prompted for a password. I inputted the password for my course-specific account and received the following output:
 
-![Image](scp1.png)
+![Image](scp1.PNG)
 
 After the scp command, try the ssh command again. After logging in successfully, try the *ls* command on the remote server to see your successfully copied file.
 
-![Image](sshAfterscp.png)
+![Image](sshAfterscp.PNG)
 
 *There is a difference in running a file on your computer and on the server, which can be shown using a file that contains the .getProperty method. The returned value will be different if the file is run on the client rather than the server since that method is used to read system properties.*
 ### 5. Creating/Setting an SSH Key
@@ -88,15 +88,15 @@ Type in the following commands:
     ssh-keygen
 
 Then, you should see the following output:
-![Image](SSHkey1.png)
+![Image](SSHkey1.PNG)
 You should fill in the red space after prompted.
 
 After providing the file to save the key, you will get:
-![Image](SSHkey2.png)
+![Image](SSHkey2.PNG)
 In this case, you can put in any passphrase you would like.
 
 After confirming your password, you will see the following image:
-![Image](SSHkey3.png)
+![Image](SSHkey3.PNG)
 
 For a Windows device, we must take the following steps to create a SSH key.
 
@@ -112,17 +112,17 @@ For a Windows device, we must take the following steps to create a SSH key.
         Get-Service ssh-agent
 
 Following these steps should look like this:
-![Image](windowsSSH.png)
+![Image](windowsSSH.PNG)
 
 When prompted again in the Administrator: Windows Powershell, use this command to add your key:
 
     ssh-add <file>
 
 In my case, I entered the path to my key.
-![Image](windowsKey.png)
+![Image](windowsKey.PNG)
 
 After completing all these steps, when you ssh into the server or scp your files, you will no longer be prompted to insert your password.
-![Image](SSHkeyF.png)
+![Image](SSHkeyF.PNG)
 
 ### 6. Optimizing Remote Running
 To optimize remote running you can do any of the following:
@@ -130,7 +130,7 @@ To optimize remote running you can do any of the following:
 *  **autosave** your files in vscode so every edit you make after creating the file will be saved
 * **create ssh key** so you don't have to put in your password every time you use the ssh or scp command
 * **use quotes** around commands when you ssh or scp. This will allow you to run multiple commands in a single line.
-![Image](optimize.png)
+![Image](optimize.PNG)
 * **use up/down key arrows** to automatically set your input to previous responses, so you don't have to retype the entire command into the command line
 
 These are just a few suggestions to optimize remote running.
