@@ -1,19 +1,2 @@
-# **Lab Header**
-## Markdown reference Test
-*Look at this: it's in italics*
-
-[Markdown Reference Link](https://commonmark.org/help/)
-
-![Image](https://images.unsplash.com/photo-1568144628871-ccbb00fc297c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGVsbG98ZW58MHx8MHx8&w=1000&q=80)
-
-* bullet points
-
-1. numbered points
-
----
-*local change - hello*
-
-`Look its a block`
-
-commentttt ![Image](webpage_test.PNG)
+# **CS15L Lab Reports**
 [Lab Report 1](https://jtanurdjaja.github.io/<your-lab-reports-repo>/lab-report-1-week-2.html)
