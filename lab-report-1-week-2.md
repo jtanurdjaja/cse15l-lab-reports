@@ -121,6 +121,13 @@ When prompted again in the Administrator: Windows Powershell, use this command t
 In my case, I entered the path to my key.
 ![Image](windowsKey.PNG)
 
+Afterwards, log onto the server on the terminal and not the powershell. Then, after ssh-ing into the server, you will still have to enter your password. Then insert the following command to create a .ssh directory:
+
+    mkdir .ssh
+
+After implementing that command, exit the main server. Then, scp your public key, in which case you still need to input your password.
+![Image](scpkey.PNG)
+
 After completing all these steps, when you ssh into the server or scp your files, you will no longer be prompted to insert your password.
 ![Image](SSHkeyF.PNG)
 
