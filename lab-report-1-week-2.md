@@ -37,6 +37,7 @@ The account should look similar to this, with the censored parts containing diff
 Then, on VSCode, open a new terminal. To open a new terminal, go to the bar at the top of VSCode and click on the tab terminal. A dropdown will appear, from which you should select new terminal. After opening a new terminal, enter in the following command:
 
     ssh cs15lwi22<letters>@ieng6.ucsd.edu
+
 *The element after the five is the letter 'l' and not the number one.*
 
 If you are connecting for the first time, the message you will receive after entering the command above is a confirmation of whether or not you want to continue connecting. In which case, you should enter 'yes'. Then after putting your password for your course-specific account, you should see the following:
