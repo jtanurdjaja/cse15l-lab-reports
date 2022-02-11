@@ -9,7 +9,7 @@ Within this file, add the following text:
 
 ![image](configtext.PNG)
 
-In the image above, I added the host, hostname, my username, and the private key name.
+In the image above, I added the host, hostname, my username, and the private key name. The "IdentityFile" refers to my private key.
 
 Now, I can ssh with "ieng6" instead of having to type out my entire username. This is the result I get when I ssh now.
 
